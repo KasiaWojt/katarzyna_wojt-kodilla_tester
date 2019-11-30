@@ -1,0 +1,12 @@
+.gradlegi gi
+/build/
+**/out
+**/build
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+/out/
