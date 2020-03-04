@@ -9,9 +9,21 @@ public class FirstClass {
         System.out.println(heavyNotebook.weight + " " + heavyNotebook.price + " " + heavyNotebook.year);
         heavyNotebook.checkWeight();
 
-        Notebook oldNotebook = new Notebook(1600, 500, 2017);
-        System.out.println(oldNotebook.weight + " " + oldNotebook.price + " " + oldNotebook.year);
-        oldNotebook.checkYear();
+        Notebook newAndCheapNotebook = new Notebook(1600, 500, 2017);
+        System.out.println(newAndCheapNotebook.weight + " " + newAndCheapNotebook.price + " " + newAndCheapNotebook.year);
+        newAndCheapNotebook.checkYearAdnPrice();
+
+        Notebook oldAndCheapNotebook = new Notebook(2500, 599, 2015);
+        System.out.println(oldAndCheapNotebook.weight + " " + oldAndCheapNotebook.price + " " + oldAndCheapNotebook.year);
+        oldAndCheapNotebook.checkYearAdnPrice();
+
+        Notebook oldAndExpensiveNotebook = new Notebook(2500, 2300, 2012);
+        System.out.println(oldAndExpensiveNotebook.weight + " " + oldAndExpensiveNotebook.price + " " + oldAndExpensiveNotebook.year);
+        oldAndExpensiveNotebook.checkYearAdnPrice();
+
+        Notebook bestDealEverNotebook = new Notebook(1500, 450, 2019);
+        System.out.println(bestDealEverNotebook.weight + " " + bestDealEverNotebook.price + " " + bestDealEverNotebook.year);
+        bestDealEverNotebook.checkYearAdnPrice();
 
     }
 }

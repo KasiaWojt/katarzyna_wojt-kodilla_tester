@@ -5,43 +5,40 @@ public class Notebook {
     int year;
 
     public Notebook(int weight, int price, int year) {
-
         this.weight = weight;
         this.price = price;
         this.year = year;
-
     }
 
     public void checkPrice() {
-
-        if (price < 500) {
-            System.out.println("This notebook is very cheap");
-        } else if (price > 500 && price < 1000) {
-            System.out.println("This price is good");
-        } else {
-            System.out.println("This notebook is quite expensive");
+        if (this.price < 600) {
+            System.out.println("This notebook is cheap.");
+        } else if (this.price <= 1000) { // 600-1000
+            System.out.println("The price is good.");
+        } else { // >1000
+            System.out.println("This notebook is quite expensive.");
         }
     }
+
     public void checkWeight() {
-
-        if (weight < 1600) {
-            System.out.println("This notebook is light");
-        } else if (weight > 1600 && weight < 2000) {
-            System.out.println("This notebook is not too heavy");
-        } else {
-            System.out.println("This notebook is heavy");
+        if (this.weight < 1600) {
+            System.out.println("Urządzenie jest lekkie");
+        } else if (this.weight <= 2000) { // 1600-2000
+            System.out.println("Urządzenie niezbyt ciężkie");
+        } else { // > 2000
+            System.out.println("Urządzenie ciężkie");
         }
     }
-    public void checkYear() {
 
-        if (year < 2018 && price < 600) {
-            System.out.println("This notebook is old");
-        } else if (year > 2018 && price < 1000 && year<2019) {
-            System.out.println("This notebook is not too old");
-        } else if (year > 2019 && price < 1500 && year<2019) {
-            System.out.println("This notebook is not too old");
-        } else {
-            System.out.println("This notebook is new");
+    public void checkYearAdnPrice() {
+        if (this.year < 2016 && this.price < 600) {
+            System.out.println("Urządzenie jest stare ale tanie.");
+        } else if (this.year < 2016) { // starczy niż 2015 a cena większa niż 600
+            System.out.println("Urządzenie jest stare i drogie.");
+        } else if (this.price < 600) { // 2016 lu nowszy i tańczy niż 600
+            System.out.println("Urządzenie jest nowe i tanie.");
+        } else { // 2016 lub nowszy i dena większa niż 600
+            System.out.println("Urządzenie jest nowe ale drogie.");
         }
     }
 
